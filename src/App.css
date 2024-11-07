@@ -1,36 +1,57 @@
-.App {
-  text-align: center;
-  background-color: #121212;
-  width: 100vw;
-  height: 100vh;
-  /* display: flex; */
-  color: white;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 62.5%;
+    color: black;
+    overflow-x: hidden;
 }
 
 body {
   padding: 0%;
   margin: 0;
-  background-color: #121212;
+  background: rgb(13,9,1);
+background: linear-gradient(180deg, rgba(13,9,1,1) 0%, rgba(89,87,78,1) 100%);
+  width: 100vw;
+  height: 100vh;
 }
 
+
+
+.App {
+  text-align: center;
+  color: white;
+}
+
+
+
 nav {
-  height: 60px;
+  height: 50%;
   width: 100%;
   margin: 0;
   border-bottom: 1px solid grey;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav h1 {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   color: white;
-  font-size: 45px;
+  font-size: 4.5rem;
 }
+
+
 .game {
   width: 100vw;
-  height: calc(100vh - 170px);
+  height: 65vh;
   display: flex;
   align-items: center;
   padding-top: 50px;
@@ -38,11 +59,11 @@ nav h1 {
 }
 
 .board {
-  width: 450px;
-  height: 550px;
-  border: 1px solid black;
+  width: 45rem;
+  height: 75rem;
   display: flex;
   flex-direction: column;
+  padding:1rem;
 }
 
 .row {
@@ -59,10 +80,11 @@ nav h1 {
   margin: 5px;
   display: grid;
   place-items: center;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bolder;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  object-fit: contain;
 }
 
 #correct {
@@ -79,7 +101,7 @@ nav h1 {
 
 .keyboard {
   width: 700px;
-  height: 100px;
+  height: 50px;
   margin-top: 60px;
 }
 
